@@ -1,0 +1,241 @@
+ .logo {
+    width: 155px; /* Set the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  header {
+    display: flex;               /* Use flexbox for layout */
+    justify-content: space-between; /* Space between title/logo and nav */
+    align-items: center;         /* Center items vertically */
+    background-color: #1591ea;  /* Change background color */
+    padding: 10px;                /* Add some padding */
+  }
+  
+  .header-content {
+    display: flex;               /* Flexbox for title and logo */
+    flex-grow: 1;                /* Allow this section to take available space */
+    justify-content: center;      /* Center title and logo */
+  }
+  
+  .site-title {
+    margin-right: 20px;          /* Space between the title and the logo */
+    font-size: 40px;             /* Adjust the font size */
+    color: #343a40;              /* Change text color */
+  }
+  
+  nav {
+    margin-left: auto;           /* Push the nav to the right */
+  }
+  
+  nav ul {
+    list-style-type: none;       /* Remove bullet points */
+    padding: 0;                  /* Remove padding */
+    display: flex;               /* Use flexbox for the list */
+  }
+  
+  nav ul li {
+    margin-left: 40px;           /* Space between items */
+  }
+  
+  nav ul li a {
+    text-decoration: dotted;      /* Dotted underline for links */
+    color: white;                /* Link color */
+  }
+  header {
+    position: relative;
+}
+
+.hero {
+    background-image: url('sp.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem; /* Adjust as needed */
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #35dd7e; /* Change to your preferred color */
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.menu-item {
+    background-color: #f9f9f9; /* Light background for items */
+    border: 1px solid #ddd; /* Border around items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.menu-item img {
+    width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5rem; /* Title font size */
+}
+
+.price {
+    font-weight: bold; /* Bold price */
+    color: #ff6347; /* Price color */
+    margin-top: 10px;
+}
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
+    align-items: center; /* Center items vertically */
+}
+
+.about-image img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.about-content {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add horizontal padding */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.submit-button {
+    background-color: #ff6347; /* Button color */
+    color: white;
+    padding: 10px 15px; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* Light text color */
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit width */
+    margin: 0 auto; /* Center the content */
+}
+
+.social-media {
+    margin-top: 10px; /* Space above social media icons */
+}
+
+.social-media a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-media img {
+    width: 24px; /* Set icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+  

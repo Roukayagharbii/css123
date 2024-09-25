@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <img src="logo.png" alt="Website Logo" class="logo">
+            <div class="header-content"> 
+              <h1 class="site-title">Krusty Krab</h1>
+        
+            </div>
+        <nav>
+          <ul>
+            
+            <li class="home"><a href="home.html">Home</a></li>
+            <li class="Menu"><a href=""Menu.html">Menu</a></li>
+            <li class="About Us"><a href="About Us.html">About Us</a></li>
+            <li class="Contact"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Krusty Krab!</h2>
+            <p>Discover our delicious dishes</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </div>
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="grid-container">
+            <div class="menu-item">
+                <img src="pizza.jpg" alt="Dish 1">
+                <h3>PIZZA</h3>
+                <p>the best pizza you will ever taste , with mozarella and everything u want</p>
+                <p class="price">10TND</p>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Dish 2">
+                <h3>BURGER</h3>
+                <p>this is the krusty krab 2nd fav menu because it remaind us with our fav show , you can tell us with what u perfer you burger and it will be ready in a min</p>
+                <p class="price">12TND</p>
+            </div>
+            <div class="menu-item">
+                <img src="tomato pasta.jpg" alt="Dish 3">
+                <h3>Tomato pasta</h3>
+                <p>Dwe do sell the best italian pasta with fish , meat and chicken ..</p>
+                <p class="price">8.99TND</p>
+            </div>
+            <div class="menu-item">
+                <img src="white past.jpg" alt="Dish 3">
+                <h3>White pasta</h3>
+                <p>best italian pasta with ur fav white sauce </p>
+                <p class="price">9.99TND</p>
+            </div>
+            <div class="menu-item">
+                <img src="our special menu.jpg" alt="Dish 3">
+                <h3>Our SPECIAL menu</h3>
+                <p>this is our fav menu , the menu that all of our clients tasted and none regret ..it is our secret </p>
+                <p class="price">15.99TND</p>
+            </div>
+            <!-- Add more menu items as needed -->
+        </div>
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <div class="grid-container">
+            <div class="about-image">
+                <img src="cap.jpg" alt="About Us Image">
+            </div>
+            <div class="about-content">
+                <p>Welcome to Krusty Krab! We are dedicated to serving delicious dishes made from the freshest ingredients. Our friendly staff and cozy atmosphere make dining with us a truly enjoyable experience. Whether you're here for a casual meal or a special occasion, we aim to provide exceptional service and quality. Come and discover your new favorite dish!</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="submit-form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Krusty Krab. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="twitter-icon.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
